@@ -74,6 +74,8 @@ void setup()
 void loop() 
 { 
   RemoteXY_Handler ();
+
+  RemoteXY.instrument_1 = RemoteXY.compass_1;
   
   digitalWrite(PIN_SWITCH_1, (RemoteXY.switch_1==0)?LOW:HIGH);
   
